@@ -1,0 +1,30 @@
+
+#img{
+        margin-left:300px;
+        margin-top:100px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#title{
+        margin-left:550px;
+        margin-top:20px;
+        color:blue;
+        font-family:Arial;
+        font-size:25px;
+        width: 190px;
+}
+#long_text{
+        margin-left:100px;
+        margin-top:20px;
+        font-weight: 500px;
+        color:grey;
+}
+#count{
+        color:red;
+        font-size:15px;
+}
+#title_text{
+        color:black;
+        font-weight: 600;
+        font-size:16px;
+}
