@@ -59,13 +59,7 @@ ddsmoothmenu.init({
             <ul>
                 <li><a href="index.php" class="selected">Главная</a></li>
                 <li><a href="index.php?c=basket&act=catalog">Каталог</a>
-                    <ul>
-                        <li><a href="#submenu1">Sub menu 1</a></li>
-                        <li><a href="#submenu2">Sub menu 2</a></li>
-                        <li><a href="#submenu3">Sub menu 3</a></li>
-                        <li><a href="#submenu4">Sub menu 4</a></li>
-                        <li><a href="#submenu5">Sub menu 5</a></li>
-                  </ul>
+             
                 </li>
                 
                 <li><a href="index.php?c=page&act=faq">Вопросы</a></li>
@@ -122,7 +116,7 @@ ddsmoothmenu.init({
     </div> <!-- END of templatemo_main -->
     
     <div id="templatemo_footer">
-    	<p><a href="#">Главная</a> | <a href="#">Продукты</a> | <a href="#">About</a> | <a href="#">Вопросы</a> | <a href="#">Контакты</a>
+    	<p><a href="index.php">Главная</a> | <a href="index.php?c=basket&act=catalog">Продукты</a> | <a href="#">About</a> | <a href="index.php?c=page&act=faq">Вопросы</a> | <a href="index.php?c=page&act=contact">Контакты</a>
 		</p>
 
     	mysite.local © 2072 <a href="#">Мир ноутбуков</a> <!-- Credit: www.templatemo.com --></div> <!-- END of templatemo_footer -->
