@@ -5,250 +5,130 @@
  * $text - ����� ������
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 4, from LayoutIt!</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?=$title?></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="./v/templatemo_style.css" rel="stylesheet" type="text/css" />
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+<link rel="stylesheet" href="./v/nivo-slider.css" type="text/css" media="screen" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-   
+<link rel="stylesheet" type="text/css" href="./v/css/ddsmoothmenu.css" />
 
-  </head>
-  <body>
+<script type="text/javascript" src="./v/js/jquery.min.js"></script>
+<script type="text/javascript" src="./v/js/ddsmoothmenu.js">
+</script>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Главная</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Profile</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">Messages</a>
-						</li>
-						<li class="nav-item dropdown ml-md-auto">
-							 <a class="nav-link dropdown-toggle" href="http://mysite.local" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-				</div>
-			</div>
-			<div class="carousel slide" id="carousel-65067">
-				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-65067" class="active">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-65067">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-65067">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" alt="Carousel Bootstrap First" src="/img/01.png">
-						<div class="carousel-caption">
-							<h4>
-							Первая распродажа года
-							</h4>
-							<p>
-							Покупать в «М.Видео» легко и приятно, особенно вместе с Bosch! Выбери крупную бытовую технику бренда и получи гриль, пылесос или утюг в подарок. Приходи за одним товаром, унеси домой два! 
-	</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" width=50% alt="Carousel Bootstrap Second" src="/img/02.png">
-						<div class="carousel-caption">
-							<h4>
-							Рассрочка на все!!!
-							</h4>
-							<p>
-							Попади под большую раздачу скидок в «mysite.local»! Только с 12 февраля по 11 марта купи технику, получи карту с выгодой до 20 000 рублей и сэкономь до 30% на следующих покупках. Скидка заработает сразу после оплаты. Успей выбрать подарки на все праздники!</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="img/03.png">
-						<div class="carousel-caption">
-							<h4>
-							Apple форева
-							</h4>
-							<p>
-							Выбирайте оригинальные аксессуары для превосходной техники Apple с особенной выгодой — получите скидку 30% на красивый и надёжный чехол при покупке iPhone XR, и скидку 20% на стильный ремешок к Apple Watch.
-							</p>
-						</div>
-					</div>
-				</div> <a class="carousel-control-prev" href="#carousel-65067" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-65067" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
-			</div>
-			<div class="jumbotron">
-				<h2>
-					Привет, пользователь!
-				</h2>
-				<p>
-				«mysite.local» – лидер по продаже электроники и бытовой техники среди розничных сетей России. Мы знаем, насколько стремительна жизнь и как важно всё успеть! Пока вы работаете и строите карьеру, воспитываете детей и воплощаете мечты в реальность, мы всегда рядом – в шаге, в клике, по звонку.
+<script type="text/javascript">
 
-Уже 25 лет «М.Видео» вместе с вами. Мы открыли более 400 магазинов в 169 городах России. Мы уверены: от желания до покупки – один шаг. Дома и на работе, в кафе и самолёте – покупайте электронику в интернет-магазине или бронируйте товары на Mvideo.ru и забирайте в любом удобном магазине сети. Огромный ассортимент бытовой техники и одинаково выгодные цены: приятно выбирать – удобно покупать.</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-5">
-			<h4>
-			<center>Лучшие товары</center>
-			</h4>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>
-							#
-						</th>
-						<th>
-							Продукт
-						</th>
-						<th>
-						Оценка
-						</th>
-						<th>
-							В наличии
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Default
-						</td>
-					</tr>
-					<tr class="table-active">
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Approved
-						</td>
-					</tr>
-					<tr class="table-success">
-						<td>
-							2
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-							Declined
-						</td>
-					</tr>
-					<tr class="table-warning">
-						<td>
-							3
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-							Pending
-						</td>
-					</tr>
-					<tr class="table-danger">
-						<td>
-							4
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-							Call in to confirm
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="col-md-2">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
+ddsmoothmenu.init({
+	mainmenuid: "top_nav", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div id="templatemo_body_wrapper">
+<div id="templatemo_wrapper">
+
+	<div id="templatemo_header">
+    	<div id="site_title"><h1><a href="#">Найдеться все</a></h1></div>
+        <div id="header_right">
+        	<p>
+	        <a href="#">Мой акаунт</a> |  <a href="#">Карзина</a> | <a href="#">Выход</a> | <a href="#">Вход</a></p>
+            <p>
+            	Shopping Cart: <strong>3 items</strong> ( <a href="shoppingcart.html">Show Cart</a> )
 			</p>
 		</div>
-		<div class="col-md-5">
-			
-			<center class='contact'>Обратная связь</center>
-			
-			<ul id='sp'>
-				<li >Контакты
-					Оставьте отзыв  и помогите нам стать лучше. </li>
-				<li>	Центр ответственности за клиента:
-					8-495-777-777-5</li>
-				<li>	Mysite.local в соцсетях
-					</li>
-</ul>
-			<p>
-				<a class="btn" href="#" style="font-size:12px">Написать отзыв»</a>
-			</p>
-		</div>
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_header -->
+    
+    <div id="templatemo_menubar">
+    	<div id="top_nav" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.php" class="selected">Главная</a></li>
+                <li><a href="index.php?c=basket&act=catalog">Каталог</a>
+                    <ul>
+                        <li><a href="#submenu1">Sub menu 1</a></li>
+                        <li><a href="#submenu2">Sub menu 2</a></li>
+                        <li><a href="#submenu3">Sub menu 3</a></li>
+                        <li><a href="#submenu4">Sub menu 4</a></li>
+                        <li><a href="#submenu5">Sub menu 5</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="index.php?c=page&act=faq">Вопросы</a></li>
+                <li><a href="index.php?c=user&act=registration">Регистрация</a></li>
+                <li><a href="index.php?c=user&act=author">Войти</a></li>
+                <li><a href="index.php?c=page&act=contact">Контакты</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of ddsmoothmenu -->
+        <div id="templatemo_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+    </div> <!-- END of templatemo_menubar -->
+    
+    <div id="templatemo_main">
+    	<div id="sidebar" class="float_l">
+        	<div class="sidebar_box"><span class="bottom"></span>
+            	<h3>Categories</h3>   
+                <div class="content"> 
+                	<ul class="sidebar_list">
+                    	<li class="first"><a href="#">Игровые</a></li>
+                        <li><a href="#">Ультрабуки</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Suspendisse posuere</a></li>
+                        <li><a href="#">Nunc a dui sed</a></li>
+                        <li><a href="#">Curabitur ac mauris</a></li>
+                        <li><a href="#">Mauris nulla tortor</a></li>
+                        <li><a href="#">Nullam ultrices</a></li>
+                        <li><a href="#">Nulla odio ipsum</a></li>
+                        <li><a href="#">Suspendisse posuere</a></li>
+                        <li><a href="#">Nunc a dui sed</a></li>
+                        <li><a href="#">Curabitur ac mauris</a></li>
+                        <li><a href="#">Mauris nulla tortor</a></li>
+                        <li><a href="#">Nullam ultrices</a></li>
+                        <li class="last"><a href="#">Sed eget purus</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_box"><span class="bottom"></span>
+           
+            </div>
+        </div>
+        <div id="content" class="float_r">
+     
+        	<h1>New Products</h1>
+			<div id="content">
+            <?=$content?>
 	</div>
-	<footer>
-	<div class="row">
-	
-		<div class="col-md-12">
-			 
-			<address>
-				 <strong>mysite.local, Inc.</strong><br> Кремль Спаская башня<br> Москва, CA 2007<br> <abbr title="Phone">Tel:</abbr> (495) 117-7890
-			</address>
-		</div>
-	</div>
-</footer>
-</div>
+        </div> 
+        <div class="cleaner"></div>
+    </div> <!-- END of templatemo_main -->
+    
+    <div id="templatemo_footer">
+    	<p><a href="#">Главная</a> | <a href="#">Продукты</a> | <a href="#">About</a> | <a href="#">Вопросы</a> | <a href="#">Контакты</a>
+		</p>
 
- <?php  include_once("footer.html");?>
-  </body>
+    	mysite.local © 2072 <a href="#">Мир ноутбуков</a> <!-- Credit: www.templatemo.com --></div> <!-- END of templatemo_footer -->
+    
+</div> <!-- END of templatemo_wrapper -->
+</div> <!-- END of templatemo_body_wrapper -->
+
+</body>
 </html>

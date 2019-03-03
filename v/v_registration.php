@@ -1,4 +1,4 @@
-<div>
+<div><?php echo $title?>
     <form method="post" >
                         <ul>
                             <li>
