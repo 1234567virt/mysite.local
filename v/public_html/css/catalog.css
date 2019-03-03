@@ -1,9 +1,0 @@
-.admin{
-    width: 500px;
-    height: 500px;
-    border:2px solid grey; 
-}
-input[type="submit"]{
-    width: 300px;
-    background:black;
-}
