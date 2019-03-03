@@ -16,3 +16,4 @@
                 $('#slider').nivoSlider();
             });
             </script>
+            <h1>New Products</h1>

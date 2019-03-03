@@ -70,7 +70,7 @@ ddsmoothmenu.init({
                 
                 <li><a href="index.php?c=page&act=faq">Вопросы</a></li>
                 <li><a href="index.php?c=user&act=registration">Регистрация</a></li>
-                <li><a href="index.php?c=user&act=author">Войти</a></li>
+                <li><a href="index.php?c=user&act=cabinet">Войти</a></li>
                 <li><a href="index.php?c=page&act=contact">Контакты</a></li>
             </ul>
             <br style="clear: left" />
@@ -113,7 +113,7 @@ ddsmoothmenu.init({
         </div>
         <div id="content" class="float_r">
      
-        	<h1>New Products</h1>
+        	
 			<div id="content">
             <?=$content?>
 	</div>
