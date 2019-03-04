@@ -4,7 +4,7 @@
             <div class="content_half float_l">
                
                 <div id="contact_form">
-                   <form method="post">
+                   <form method="post" action="index.php?c=user&act=registration">
                         
                         <label for="name">Имя:</label> <input type="text" id="author" name="name" class="required input_field" min='5' placeholder="ФИО" required />
                         <div class="cleaner h10"></div>
@@ -14,7 +14,7 @@
                         <label for="call">Телефон:</label> <input type="number" name="call" id="phone" class="validate-email required input_field" placeholder="Телефон" required />
                         <div class="cleaner h10"></div>
         
-                        <label for="passwd">Пароль:</label> <input id="text" name="passwd" type="password" class="validate-email required input_field" placeholder="Пароль" required >
+                        <label for="passwd">Пароль:</label> <input id="text" name="paswd" type="password" class="validate-email required input_field" placeholder="Пароль" required >
                         <div class="cleaner h10"></div>
                         
                         <input type="submit" class="submit_btn" name="ok" id="submit" value="Зарегистрироваться" />

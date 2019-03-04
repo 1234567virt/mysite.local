@@ -1,6 +1,6 @@
-<h1>Contact Us</h1>
+<h1>Обратная связь</h1>
             <div class="content_half float_l">
-                <p>Etiam eget leo nisl. Morbi magna enim, lobortis vitae condimentum eu, ultrices a lacus.</p>
+                <p>Напишите нам мы скучаем без ваших отзывов.</p>
                 <div id="contact_form">
                    <form method="post" name="contact" action="#">
                         
@@ -21,22 +21,22 @@
                 </div>
             </div>
         <div class="content_half float_r">
-        	<h5>Primary Office</h5>
-			660-110 Quisque diam at ligula, <br />
-			Etiam dictum lectus quis, 11220<br />
-			Sed mattis mi at sapien<br /><br />
+        	<h5>Главный офис</h5>
+			Европа Россия , <br />
+			Кремль , 9<br />
+			До востребования<br /><br />
 						
-			Phone: 010-010-6600<br />
+			Телефон: 010-010-6600<br />
 			Email: <a href="mailto:info@yourcompany.com">info@yourcompany.com</a><br/>
 			
             <div class="cleaner h40"></div>
 			
-            <h5>Secondary Office</h5>
-			120-360 Cras ac nunc laoreet,<br />
-			Nulla vitae leo ac dui, 10680<br />
-			Cras id sem nulla<br /><br />
+            <h5>Дополнительный офис</h5>
+			Европа Россия,<br />
+			Маросейка , 11<br />
+			Ждите возможно ответим<br /><br />
 			
-			Phone: 030-030-0220<br />
+			Телефон: 030-030-0220<br />
 			Email: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a><br/>
 			<br />
             Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>

@@ -18,7 +18,7 @@ $obj=new Basket();
             $arg1=$obj->clear($_GET['id']);
             $arg2=$obj->clear($_GET['count']);  
          $count_save= $obj->proverka($arg1,$arg2);
-        //   echo $arg1,$arg2;
+           echo $arg1,$arg2;
          
                 if($count_save===false)
                 {
@@ -34,7 +34,6 @@ $obj=new Basket();
                     foreach($count_save as $key=>$val)
                     {
                   
-                    
                         $count_basket=$obj->proverka_basket($val['name'],$_SESSION['user_id']);
                         //var_dump($count_basket);
                         if($count_basket==false)

@@ -49,7 +49,8 @@ ddsmoothmenu.init({
 	        <a href="#">Мой акаунт</a> |  <a href="#">Карзина</a> | <a href="#">Выход</a> | <a href="#">Вход</a></p>
             <p>
             	Shopping Cart: <strong>3 items</strong> ( <a href="shoppingcart.html">Show Cart</a> )
-			</p>
+              <?php echo  $_SESSION["user_id"]; ?>
+            </p>
 		</div>
         <div class="cleaner"></div>
     </div> <!-- END of templatemo_header -->

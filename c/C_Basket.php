@@ -3,9 +3,7 @@ include_once('m/model.php');
 
 class C_Basket extends C_Base
 {
-
-
-	public function action_catalog(){
+    public function action_catalog(){
 		$this->title .= 'Каталог';
 		if(isset($_SESSION['user_id'])){
 		$logout = new Basket();

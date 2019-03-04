@@ -5,7 +5,7 @@
  * $title - ���������
  * $content - HTML ��������
  */
-
+echo $_SESSION["user_id"];
 ?>
 <center>  <h1></h1></center>
              <h3 style='margin:30px'> </span> </h3>
