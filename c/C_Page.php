@@ -20,8 +20,6 @@ class C_Page extends C_Base
 	}
 	public function action_contact(){
 		$this->title .= 'Связь';
-		
-	
 		$this->content = $this->Template('v/v_contact.php', array('text' =>''));	
 	}
 

@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="./v/css/catalog.css" />
-<link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
+
 <div id="slider-wrapper">
                 <div id="slider" class="nivoSlider">
                     <img src="./v/images/slider/02.jpg" alt="" />
@@ -23,11 +23,11 @@
     <div class='gal'>
     <h4 class='name'><a href='product.php?id='<?=$val['id']?>'><?=$val['name']?></a></h4>
     <a href='galerybig.php?id=<?=$val['id']?>' target='_blank'>
-    <img src='./v/<?=$val['src']?>' width='50%' class='catalog' ></a>
-    <h4 class="price" ><?=$val['price']?> $</h4>
-    <a href="./m/obr.php?id=<?=$val['id']?>&count=1"><input type='button' class='basket' value="Корзина"></a>
+    <img src='./v/<?=$val['src']?>' width='70%' class='catalog' ></a>
+    <h4 class="price"><?=$val['price']?> $</h4>
+    <a href="./m/obr.php?id=<?=$val['id']?>&count=1"><input type='button'  class='basket' value="Корзина"></a>
   
-    <a href='index.php?c=produkt&act=produkt&id=<?=$val['id']?>'><input type='button' class='basket'value="Подробней"></a>
+    <a href='index.php?c=produkt&act=produkt&id=<?=$val['id']?>' ><input type='button'  class='basket' value="Подробней"></a>
   </div>
    <? }?>
   

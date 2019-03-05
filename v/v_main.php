@@ -5,18 +5,20 @@
  * $text - ����� ������
  */
 $sort=['index.php/c=&act='=>'Популярность',
-'index.php/c=page&act='=>'Цена',
-'index.php/c=page&act='=>'Рейтинг',
-'index.php/c=page&act='=>'Отзыв',
-'index.php/c=page&act='=>'Акции',
-'index.php/c=page&act='=>'Новинки',
-'index.php/c=page&act='=>'Наличие'] ;
+        'index.php/c=page&act='=>'Цена',
+        'index.php/c=page&act='=>'Рейтинг',
+        'index.php/c=page&act='=>'Отзыв',
+        'index.php/c=page&act='=>'Акции',
+        'index.php/c=page&act='=>'Новинки',
+        'index.php/c=page&act='=>'Наличие' 
+        ] ;
 $menu=['index.php'=>'Главная',
-'index.php?c=basket&act=catalog'=>'Каталог',
-'index.php?c=page&act=faq'=>'Вопросы',
-'index.php?c=page&act=contact'=>'Контакты',
-'index.php?c=user&act=registration'=>'Регистрация',
-'index.php?c=user&act=cabinet'=>'Войти'] ;
+		'index.php?c=basket&act=catalog'=>'Каталог',
+		'index.php?c=page&act=faq'=>'Вопросы',
+		'index.php?c=page&act=contact'=>'Контакты',
+		'index.php?c=user&act=registration'=>'Регистрация',
+        'index.php?c=user&act=cabinet'=>'Войти'
+        ] ;
 
 ?>
 

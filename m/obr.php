@@ -41,9 +41,6 @@ $obj=new Basket();
                           
                          
                         
-                     
-                        echo $arg2;
-                        echo $arg1; 
                          echo $val["name"];
                          $obj->insert_basket($_SESSION['user_id'],$arg1,$val["name"],$arg2);
                          //echo $name;

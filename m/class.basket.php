@@ -49,8 +49,9 @@ class Basket extends Connect{
      } 
  
      function basket($id_user){
-         $sql="select product.src as `src`,basket_new.* 
-         ,product.price as `price`,product.text as `text`, `basket_new`.count * `product`.price as `result` from `basket_new` left join `product` on `basket_new`.id_product=`product`.id where basket_new.id_user=$id_user ";
+         $sql="select product.src as `src`,basket.* 
+         ,product.price as `price`,product.text as `text`, `basket`.count * `product`.price as `result`,sum(basket.count) as `itog`
+          from `basket` left join `product` on `basket_`.id_product=`product`.id where basket.id_user=$id_user ";
          $object=self::connecting();
          $result=$object->query($sql)->fetchAll(); 
      return $result;

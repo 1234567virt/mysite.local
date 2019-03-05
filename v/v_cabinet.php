@@ -38,7 +38,7 @@ placeholder='0' id='select'  /> </td>
         <td align="right"><?=$val['price']?> $</td> 
         
      
-        <td align="right"><?=$val['result']?>$ </td>
+        <td align="right"><?=$val['result']?>$</td>
        <td align="center">
         <button type="submit"  name='save' value='save' style="background-color:blue;border-radius:4px;border:0px transparent"> <img src='./v/images/basket.png'></button>
 <button type="submit" name='delete' value='delete' style="margin-top:3px;background-color:red;border-radius:4px;border:0px transparent"><img src='./v/images/rm.png'  style='width:17px;height:17px'></button>
@@ -48,6 +48,11 @@ placeholder='0' id='select'  /> </td>
   <?php
   } 
 ?>
+<tr>
+        <td>Итого</td>
+        <td></td>
+        <td colspan="4"></td>
+</tr>
 </table>		
  <a href="print.php" style=" margin-top:15px; display:inline-block; margin-left:150px;width:250px;height:30px;font-weight:bold;color:white;background:red;border-radius:7px;border:0px solid transparent;padding-top:10px; text-align:center">Нажми меня,я хочу тебя</a>
  
