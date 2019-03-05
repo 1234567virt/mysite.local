@@ -5,12 +5,15 @@
  * $title - ���������
  * $content - HTML ��������
  */
-echo $_SESSION["user_id"];
+
 ?>
-<center>  <h1></h1></center>
+   <link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
+        <link rel="stylesheet" href="./v/css/print.css" media="print" > 
+        <script type="text/javascript" src="https://use.fontawesome.com/452826394c.js"></script>
+<center>  <h1>Корзина</h1></center>
              <h3 style='margin:30px'> </span> </h3>
-               <table width="680px" cellspacing="0" cellpadding="5">
-                       	  <tr bgcolor="#ddd">
+               <table width="680px" cellspacing="0" cellpadding="5" >
+                       	  <tr bgcolor="#3b3637" >
                         	<th width="220" align="left">Изображение</th> 
                         	<th width="180" align="left">Название </th> 
                        	  	<th width="100" align="center">Количество </th> 
@@ -26,7 +29,7 @@ echo $_SESSION["user_id"];
    
    <form action ='./m/obr.php'>
   <tr>
-        <td><img src='<?=$val['src']?>' width="40%"/></td> 
+        <td><img src='./v/<?=$val['src']?>' width="40%"/></td> 
         <td><?=$val['name']?></td> 
         <td align="center"><input type="number" name="count" value='<?=$val['count']?>'  min='0' max='15'
 placeholder='0' id='select'  /> </td>
@@ -37,8 +40,8 @@ placeholder='0' id='select'  /> </td>
      
         <td align="right"><?=$val['result']?>$ </td>
        <td align="center">
-        <button type="submit"  name='save' value='save' style="background-color:blue;border-radius:4px;border:0px transparent"> <img src='/public_html/img/basket.png'></button>
-<button type="submit" name='delete' value='delete' style="margin-top:3px;background-color:red;border-radius:4px;border:0px transparent"><img src='./public_html/img/rm.png'  style='width:17px;height:17px'></button>
+        <button type="submit"  name='save' value='save' style="background-color:blue;border-radius:4px;border:0px transparent"> <img src='./v/images/basket.png'></button>
+<button type="submit" name='delete' value='delete' style="margin-top:3px;background-color:red;border-radius:4px;border:0px transparent"><img src='./v/images/rm.png'  style='width:17px;height:17px'></button>
     </td>
         </tr>
    </form>
@@ -46,9 +49,5 @@ placeholder='0' id='select'  /> </td>
   } 
 ?>
 </table>		
-                    	
-         </div>
-         <a href="print.php" style=" margin-top:15px; display:inline-block; margin-left:150px;width:250px;height:30px;font-weight:bold;color:white;background:red;border-radius:7px;border:0px solid transparent;padding-top:10px; text-align:center">Нажми меня,я хочу тебя</a>
-    </div>
-</div>
-	
+ <a href="print.php" style=" margin-top:15px; display:inline-block; margin-left:150px;width:250px;height:30px;font-weight:bold;color:white;background:red;border-radius:7px;border:0px solid transparent;padding-top:10px; text-align:center">Нажми меня,я хочу тебя</a>
+ 

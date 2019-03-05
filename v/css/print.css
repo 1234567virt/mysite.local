@@ -1,0 +1,5 @@
+@media print {
+    body {background:#fff; color:white; font-size:1em;}
+    .ddsmoothmenu, .block2, .block3 {display:none}
+    .content {padding:0; margin:0}
+    }

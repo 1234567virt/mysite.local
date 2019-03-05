@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
 <link rel="stylesheet" type="text/css" href="./v/css/catalog.css" />
 <center> <h2>Каталог</h2></center>
   <?php foreach($product as $key=>$val){?>

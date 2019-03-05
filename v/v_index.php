@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="./v/css/catalog.css" />
+<link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
 <div id="slider-wrapper">
                 <div id="slider" class="nivoSlider">
                     <img src="./v/images/slider/02.jpg" alt="" />

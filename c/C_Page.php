@@ -14,6 +14,7 @@ class C_Page extends C_Base
 		$this->title .= 'Главная';
 		//$text = text_get();
 		$logout = new Basket();
+	
 		$product= $logout->getRequestsProduct();
 		$this->content = $this->Template('v/v_index.php', array('product' => $product));	
 	}
