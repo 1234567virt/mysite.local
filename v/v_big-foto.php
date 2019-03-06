@@ -32,14 +32,15 @@
                         }?></td>
                     </tr>
                     <tr>
-                    	<td>Количество</td>
+                      <td>Количество</td>
+                      <form action="./m/obr.php">
                         <td><input type="number" name="count" value="1" style="width: 30px; text-align: right" /></td>
                     </tr>
                 </table>
                 <div class="cleaner h20"></div>
-
-                <a href="./m/obr.php?id=<?=$val['id']?>&count=<?=$val['count']?>" class="addtocart"></a>
-              
+                <input type="hidden" name="id" value='<?=$val['id']?>' />
+                 <button type="submit"  name='save' value='save'  style='border:0px solid transparent;background-color:transparent'> <img src='./v/images/templatemo_addtocart.jpg' style='border:0px solid transparent'></button>
+                      </form>
       <p><?=$val['text']?><p> 
           
             <?php } ?>
