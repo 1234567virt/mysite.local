@@ -27,13 +27,13 @@ class C_User  extends C_Base
 		if($this->isPost()) {
 			$login = new User();
 			$text = $login->author($_POST['login'], $_POST['passwd']);
-			if ($text) {
+			if (isset($_SESSION['user_id'])) {
                 $logout= new Basket();
 				$text= $logout->basket($_SESSION['user_id']);
 				$this->content = $this->Template('v/v_cabinet.php', array('text' => $text));
 			} 
 			else {
-				$this->content = $this->Template('v/v_author.php', array('text' => $text));
+				$this->content = $this->Template('v/v_author.php', array('text' => ''));
 			}
 		}
 		else if(isset($_SESSION['user_id'])){
