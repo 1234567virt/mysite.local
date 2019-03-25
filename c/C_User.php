@@ -7,13 +7,7 @@ include_once('m/model.php');
 
 class C_User  extends C_Base
 {
-    
-	
-
-
-
-	
-	function action_logout() {
+    function action_logout() {
 		$logout = new User();
         $result = $logout->logout();
         header('location: index.php');

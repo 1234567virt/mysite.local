@@ -16,6 +16,18 @@ class C_Basket extends C_Base
 }
 
 
+public function action_check(){
+	$this->title.='Чек';
+	if(isset($_SESSION['user_id'])){
+		$logout=new Basket();
+		
+		$check=$logout->basket($_SESSION['user_id']);
+		$this->content=$this->Template('v/v_check.php',array('check'=>$check));
+	}
+	else{
+		header('location.php');
+	}
+}
 
 }
 

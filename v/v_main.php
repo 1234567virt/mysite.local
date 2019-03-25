@@ -49,7 +49,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="#">Найдеться все</a></h1></div>
         <div id="header_right">
         <?php if(isset($_SESSION['user_id'])){?>
-        	   	<p>     <a href="#">Мой акаунт</a> | <a href="index.php?c=user&act=logout">Выход</a> |<a href="#">Купить</a></p>
+        	   	<p>     <a href="#">Мой акаунт</a> | <a href="index.php?c=user&act=logout">Выход</a> |<a href="index.php?c=user&act=v_check.php">Купить</a></p>
             <p>
             	В корзине: <strong><?php //echo $count;?>продукта</strong> ( <a href="index.php?c=user&act=cabinet">Корзина</a> )
 <?php } else {} ?>
