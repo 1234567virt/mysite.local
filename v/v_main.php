@@ -4,21 +4,7 @@
  * ================
  * $text - ����� ������
  */
-$sort=['index.php/c=&act='=>'Популярность',
-        'index.php/c=page&act='=>'Цена',
-        'index.php/c=page&act='=>'Рейтинг',
-        'index.php/c=page&act='=>'Отзыв',
-        'index.php/c=page&act='=>'Акции',
-        'index.php/c=page&act='=>'Новинки',
-        'index.php/c=page&act='=>'Наличие' 
-        ] ;
-$menu=['index.php'=>'Главная',
-		'index.php?c=basket&act=catalog'=>'Каталог',
-		'index.php?c=page&act=faq'=>'Вопросы',
-		'index.php?c=page&act=contact'=>'Контакты',
-		'index.php?c=user&act=registration'=>'Регистрация',
-        'index.php?c=user&act=cabinet'=>'Войти'
-        ] ;
+
 
 ?>
 
@@ -54,7 +40,8 @@ ddsmoothmenu.init({
 </head>
 
 <body>
-
+<script>
+</script>
 <div id="templatemo_body_wrapper">
 <div id="templatemo_wrapper">
 
@@ -62,7 +49,7 @@ ddsmoothmenu.init({
     	<div id="site_title"><h1><a href="#">Найдеться все</a></h1></div>
         <div id="header_right">
         <?php if(isset($_SESSION['user_id'])){?>
-        	   	<p>     <a href="#">Мой акаунт</a> | <a href="index.php?c=user&act=logout">Выход</a> |</p>
+        	   	<p>     <a href="#">Мой акаунт</a> | <a href="index.php?c=user&act=logout">Выход</a> |<a href="#">Купить</a></p>
             <p>
             	В корзине: <strong><?php //echo $count;?>продукта</strong> ( <a href="index.php?c=user&act=cabinet">Корзина</a> )
 <?php } else {} ?>
@@ -74,20 +61,17 @@ ddsmoothmenu.init({
     <div id="templatemo_menubar">
     	<div id="top_nav" class="ddsmoothmenu">
             <ul>
-            <? foreach( $menu as $url=>$name){ 
-                     if(isset($_SESSION['user_id'])){ 
-                         if($name!='Войти' && $name!='Регистрация'){?>
-                        <li><a href="<?=$url?>"><?=$name?></a></li>
-              
-                <?php 
-                    } 
-                }
-                    else{ ?>
-                        <li><a href="<?=$url?>"><?=$name?></a></li>
-                <?php    }
-                }
-                ?>
-                
+       <li><a href="index.php">Главная</a></li>
+       <li> <a href="index.php?c=basket&act=catalog">Каталог</a></li>
+       <li> <a href="index.php?c=page&act=contact">Контакты</a></li>
+       <?php if(!isset($_SESSION['user_id'])){ ?>
+       <li> <a href="index.php?c=user&act=registration">Регистрация</a></li>
+       <li> <a href="index.php?c=user&act=cabinet">Вход</a></li>
+       <?php 
+       }
+            else { ?>
+       <li> <a href="index.php?c=user&act=cabinet">Личный кабинет</a></li>
+       <?php } ?>
             </ul>
             <br style="clear: left" />
         </div> <!-- end of ddsmoothmenu -->

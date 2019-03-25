@@ -7,6 +7,25 @@
  */
 
 ?>
+<script>
+$(document).ready(function(){
+
+$('#res').change(function(){
+$.ajax({
+type: "GET",
+url: "show.php",
+data: "count="+$("#res").val(),
+success: function(html){
+$("#count").html(html);
+}
+});
+return false;
+});
+
+});
+</script>
+
+
    <link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
         <link rel="stylesheet" href="./v/css/print.css" media="print" > 
         <script type="text/javascript" src="https://use.fontawesome.com/452826394c.js"></script>
@@ -29,16 +48,16 @@
    
    <form action ='./m/obr.php'>
   <tr>
-        <td><img src='./v/<?=$val['src']?>' width="40%"/></td> 
+        <td><img src='./v/<?=$val['src']?>' width="50%"/></td> 
         <td><?=$val['name']?></td> 
-        <td align="center"><input type="number" name="count" value='<?=$val['count']?>'  min='0' max='15'
+        <td align="center"><input type="number" onfocus='counts()' id='res' name="count" value='<?=$val['count']?>'  min='0' max='15'
 placeholder='0' id='select'  /> </td>
-        <input type="hidden" name="id" value='<?=$val['id_product']?>'  placeholder='0' id='select'  />
+        <input type="hidden" name="id"  value='<?=$val['id_product']?>'  placeholder='0' id='select'  />
         <input type="hidden" name="name" value='<?=$val['name']?>'  placeholder='0' id='select'  />
         <td align="right"><?=$val['price']?> $</td> 
         
      
-        <td align="right"><?=$val['result']?>$</td>
+        <td align="right" ><?=$val['result']?>$</td>
        <td align="center">
         <button type="submit"  name='save' value='save' style="background-color:blue;border-radius:4px;border:0px transparent"> <img src='./v/images/basket.png'></button>
 <button type="submit" name='delete' value='delete' style="margin-top:3px;background-color:red;border-radius:4px;border:0px transparent"><img src='./v/images/rm.png'  style='width:17px;height:17px'></button>
@@ -50,9 +69,8 @@ placeholder='0' id='select'  /> </td>
 ?>
 <tr>
         <td>Итого</td>
-        <td></td>
+        <td id='count'></td>
         <td colspan="4"></td>
 </tr>
 </table>		
  <a href="print.php" style=" margin-top:15px; display:inline-block; margin-left:150px;width:250px;height:30px;font-weight:bold;color:white;background:red;border-radius:7px;border:0px solid transparent;padding-top:10px; text-align:center">Нажми меня,я хочу тебя</a>
- 

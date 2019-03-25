@@ -1,0 +1,2 @@
+[Mon Mar 25 22:24:05.715288 2019] [php7:error] [pid 22914] [client 127.0.0.1:58532] script '/opt/lampp/htdocs/mysite.local/print.php' not found or unable to stat, referer: http://mysite.local/index.php?c=user&act=cabinet
+[Mon Mar 25 22:24:05.788395 2019] [php7:error] [pid 22914] [client 127.0.0.1:58532] script '/opt/lampp/htdocs/mysite.local/print.php' not found or unable to stat, referer: http://mysite.local/print.php
