@@ -89,17 +89,17 @@ class Basket extends Connect{
     return $result;
     }
 
-    function insert_basket($user_id,$name,$id_product,$count){
+    function insert_basket($user_id,$id_product,$count){
 
-        $sql="INSERT INTO `basket` ( `id_user`, `id_product`, `name`, `count`) VALUES ('$user_id','$name','$id_product',$count)";
-        $count="UPDATE `basket`  SET `count`=count+1 WHERE `id`='$id_product'";
+        $sql="INSERT INTO `basket` ( `id_user`, `id_product`, `count`) VALUES ('$user_id','$id_product',$count)";
+        $count="UPDATE `basket`  SET `count`=count+1 WHERE `id_product`='$id_product' and `id_user`='$id_user' ";
         $object=self::connecting();
         $result=$object->query($sql);
         $object->query($count);
      }
-   function update_basket($arg2,$name,$id_user){
+   function update_basket($arg2,$id_product,$id_user){
 
-        $sql="UPDATE `basket` SET  `count`='$arg2' where `name`='$name' and `id_user`='$id_user'";
+        $sql="UPDATE `basket` SET  `count`='$arg2' where `id_product`='$id_product' and `id_user`='$id_user'";
         $object=self::connecting();
         $result=$object->query($sql);
      }
@@ -117,7 +117,7 @@ class Basket extends Connect{
 
     function basket($id_user){
         $sql="select product.src as `src`,basket.* 
-        ,product.price as `price`,product.text as `text`, `basket`.count * `product`.price as `result` from `basket` left join `product` on `basket`.id_product=`product`.id where basket.id_user=$id_user ";
+        ,product.price as `price`,product.text as `text`,`product`.name, `basket`.count * `product`.price as `result` from `basket` left join `product` on `basket`.id_product=`product`.id where basket.id_user=$id_user ";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll(); 
     return $result;
@@ -136,8 +136,8 @@ class Basket extends Connect{
      return $result->fetchAll();     
 }
 
-    function proverka_basket($name,$id){
-        $sql="select * from `basket` where `name`='$name' and `id_user`=$id";
+    function proverka_basket($idproduct,$id_user){
+        $sql="select * from `basket` where `id_product`='$idproduct' and `id_user`=$id_user";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll(); 
 

@@ -34,15 +34,15 @@ $obj=new Basket();
                     foreach($count_save as $key=>$val)
                     {
                   
-                        $count_basket=$obj->proverka_basket($val['name'],$_SESSION['user_id']);
+                        $count_basket=$obj->proverka_basket($val['id'],$_SESSION['user_id']);
                         //var_dump($count_basket);
                         if($count_basket==false)
                         {
                           
                          
                         
-                         echo $val["name"];
-                         $obj->insert_basket($_SESSION['user_id'],$arg1,$val["name"],$arg2);
+                        // echo $val["name"];
+                         $obj->insert_basket($_SESSION['user_id'],$arg1,$arg2);
                          //echo $name;
                          header("Location:/index.php?c=basket&act=catalog");
                          die();
@@ -50,9 +50,9 @@ $obj=new Basket();
                         else
                         {
                             //$price_basket=$one["price"] * $arg2;
-                            $obj->update_basket($arg2,$val["name"],$_SESSION['user_id']);
+                            $obj->update_basket($arg2,$val['id'],$_SESSION['user_id']);
                            
-                    echo $val['name'];
+                    //echo $val['name'];
                         }
                     }
                     header('Location:/index.php?c=user&act=cabinet');

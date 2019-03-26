@@ -53,7 +53,7 @@ return false;
         <td align="center"><input type="number" onfocus='counts()' id='res' name="count" value='<?=$val['count']?>'  min='0' max='15'
 placeholder='0' id='select'  /> </td>
         <input type="hidden" name="id"  value='<?=$val['id_product']?>'  placeholder='0' id='select'  />
-        <input type="hidden" name="name" value='<?=$val['name']?>'  placeholder='0' id='select'  />
+    
         <td align="right"><?=$val['price']?> $</td> 
         
      
