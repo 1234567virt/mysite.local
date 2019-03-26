@@ -29,6 +29,7 @@ return false;
    <link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
         <link rel="stylesheet" href="./v/css/print.css" media="print" > 
         <script type="text/javascript" src="https://use.fontawesome.com/452826394c.js"></script>
+<p>  <?php echo "Здравствуйте-".$_SESSION['user']."<br>";?></p>
 <center>  <h1>Корзина</h1></center>
              <h3 style='margin:30px'> </span> </h3>
                <table width="680px" cellspacing="0" cellpadding="5" >
@@ -41,9 +42,10 @@ return false;
                         	<th width="90"> </th>
                         </tr>
                <?php
+            
    foreach ($text as $key=>$val)
     {
-        //require_once('../templates/basket/basket_form.php');
+     
         ?>
    
    <form action ='./m/obr.php'>

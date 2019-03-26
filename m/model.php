@@ -44,7 +44,7 @@ class User extends Connect {
                 if(password_verify($password,$user['user_password'])){
                     $_SESSION['user_id']=$user['id_user'];
                     $_SESSION['success_message']='Успешная авторизация';
-                    
+                    $_SESSION['user']=$user['user_name'];
                     return 'Добро пожаловать в систему // ' .  $_SESSION['success_message']. '!';
                 
                 }
