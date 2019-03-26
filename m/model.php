@@ -94,21 +94,14 @@ class Basket extends Connect{
         $sql="SELECT * FROM `product` ORDER BY `id` DESC limit 3";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll();
-         //   if($object->query('select count(*) from product')->fetchColumn()===0){
-           //     die();
-            //}
-            //else{
-              //  $product=$result->fetchAll();
-                //unset($object); 
-         
-        //}
+     
     return $result;
     }
 
     function insert_basket($user_id,$id_product,$count){
 
         $sql="INSERT INTO `basket` ( `id_user`, `id_product`, `count`) VALUES ('$user_id','$id_product',$count)";
-        $count="UPDATE `basket`  SET `count`=count+1 WHERE `id_product`='$id_product' and `id_user`='$id_user' ";
+        $count="UPDATE `product`  SET `count`=count+1 WHERE `id`='$id_product'";
         $object=self::connecting();
         $result=$object->query($sql);
         $object->query($count);
@@ -116,6 +109,7 @@ class Basket extends Connect{
    function update_basket($arg2,$id_product,$id_user){
 
         $sql="UPDATE `basket` SET  `count`='$arg2' where `id_product`='$id_product' and `id_user`='$id_user'";
+       
         $object=self::connecting();
         $result=$object->query($sql);
      }
@@ -128,6 +122,8 @@ class Basket extends Connect{
         $sql="SELECT * FROM `product` where `id`=$id" ;
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll(); 
+        $count="UPDATE `product`  SET `count`=count+1 WHERE `id`='$id'";
+        $object->query($count);
     return $result;
     } 
 
