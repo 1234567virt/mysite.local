@@ -89,6 +89,22 @@ class Basket extends Connect{
     return $result;
     }
 
+
+    function getRequestsProductNew(){
+        $sql="SELECT * FROM `product` ORDER BY `id` DESC limit 3";
+        $object=self::connecting();
+        $result=$object->query($sql)->fetchAll();
+         //   if($object->query('select count(*) from product')->fetchColumn()===0){
+           //     die();
+            //}
+            //else{
+              //  $product=$result->fetchAll();
+                //unset($object); 
+         
+        //}
+    return $result;
+    }
+
     function insert_basket($user_id,$id_product,$count){
 
         $sql="INSERT INTO `basket` ( `id_user`, `id_product`, `count`) VALUES ('$user_id','$id_product',$count)";
