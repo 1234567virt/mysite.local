@@ -65,6 +65,7 @@ class User extends Connect {
             } 
             return false;
         }
+        
 }
 class Basket extends Connect{
    // public $user_id;
@@ -75,7 +76,7 @@ class Basket extends Connect{
     }
     
     function getRequestsProduct(){
-        $sql="SELECT * FROM `product`";
+        $sql="SELECT * FROM `product` ";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll();
          //   if($object->query('select count(*) from product')->fetchColumn()===0){
@@ -159,6 +160,9 @@ class Basket extends Connect{
             
             }
     return $result;       
+    }
+    function check_form(){
+
     }
 }
     ?>
