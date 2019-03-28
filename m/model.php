@@ -91,8 +91,9 @@ class Basket extends Connect{
     }
 
 
-    function getRequestsProductNew(){
-        $sql="SELECT * FROM `product` ORDER BY `id` DESC limit 3";
+  
+    function getRequestsProductFilter($val1,$val2){
+        $sql="SELECT * FROM `product` ORDER BY $val1 DESC limit $val2";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll();
      

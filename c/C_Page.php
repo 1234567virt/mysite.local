@@ -15,7 +15,7 @@ class C_Page extends C_Base
 		//$text = text_get();
 		$logout = new Basket();
 	
-		$product= $logout->getRequestsProductNew();
+		$product= $logout->getRequestsProductFilter('id',3);
 		$this->content = $this->Template('v/v_index.php', array('product' => $product));	
 	}
 	public function action_contact(){

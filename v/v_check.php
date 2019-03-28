@@ -8,7 +8,12 @@ $year=date("Y");
         <link rel="stylesheet" href="./v/css/basket.css" media="screen"> 
         <link rel="stylesheet" href="./v/css/print.css" media="print" > 
                <center>  <h1><?=$h1?></h1></center>
-            <table width="680px" style="margin:auto;color:black;" cellspacing="0" cellpadding="5">
+    <p>Счет:<?=$_POST['number']?></p>
+    <p>ФИО:<?=$_SESSION['user']?></p>
+    <p>Адрес:<?=$_POST['adres']?></p>
+    <p>Дата:<?=$_POST['dost']?></p>
+    <p>Сообщение:<?=$_POST['message']?></p>
+               <table width="680px" style="margin:auto;color:black;" cellspacing="0" cellpadding="5">
                        	  <tr bgcolor="#ddd">
                         	<th width="220" align="left">Изображение</th> 
                         	<th width="180" align="left">Название </th> 
@@ -18,19 +23,21 @@ $year=date("Y");
                         	<th width="90"> </th>
                         </tr>
                <?php
-    foreach($check as $key=>$val){
+    foreach($product as $key=>$val){
 ?>
         <tr>
         <td><img src='./v/<?=$val['src']?>' width="40%"/></td> 
         <td><?=$val['name']?></td> 
-        <td align="center"><input type="number" name="count" value='<?=$val['count']?>'  placeholder='0' id='select'  /> </td>
+        <td align="center"><?=$val['count']?> </td>
       
-        <input type="hidden" name="name" value='<?=$val['name']?>'  placeholder='0' id='select'  />
+        
         <td align="right"><?=$val['result']?>$ </td>
        <td align="center">
     </td>
         </tr>
-  <?php } ?>
+  <?php } 
+  
+  ?>
 </table>		
    <a href="#"  onclick="window.print()"><i style="display:block;margin-left:50%;margin-top:1%" class="fa fa-3x fa-shopping-basket"></i></a>
    <center><?=$year?> г.</center>

@@ -84,18 +84,18 @@ ddsmoothmenu.init({
             	<h3>Сортировка</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    <li class="first"><a href="index.php/c=&act=">Популярность</a></li>
-                        <li><a href="index.php/c=&act=">Рейтинг</a></li>
-                        <li><a href="index.php/c=&act=">Цена</a></li>
-                        <li><a href="index.php/c=&act=">Отзыв</a></li>
-                        <li><a href="index.php/c=&act=">Акции</a></li>
-                        <li><a href="index.php/c=&act=">Новинки</a></li>
-                        <li class="last"><a href="index.php/c=&act=">Наличие</a></li>
+                    <li class="first"><a href="index.php?c=basket&act=catalog">Популярность</a></li>
+                        <li><a href="index.php?c=basket&act=catalog">Рейтинг</a></li>
+                        <li><a href="index.php?c=basket&act=catalog&val1=price&val2=2">Цена</a></li>
+                        <li><a href="index.php?c=basket&act=catalog">Отзыв</a></li>
+                        <li><a href="index.php?c=basket&act=catalog">Акции</a></li>
+                        <li><a href="index.php?c=basket&act=catalog&val1=count&val2=3">Новинки</a></li>
+                        <li class="last"><a href="index.php?c=basket&act=availability">Наличие</a></li>
                 </ul>
                 </div>
             </div>
             <div class="sidebar_box"><span class="bottom"></span>
-           
+    
             </div>
         </div>
         <div id="content" class="float_r">

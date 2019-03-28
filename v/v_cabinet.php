@@ -90,11 +90,11 @@ placeholder='0' id='select'  /> </td>
 <div id='adress'>
 <center><i>Заполните данные для оформления заказа.</i></center>
                 <div id="contact_form">
-                   <form method="post" style="margin-top:5%;margin-left:40%" name="contact" action="index.php?c=user&act=check">
+                   <form method="post" style="margin-top:5%;margin-left:40%" name="contact" action="index.php?c=basket&act=check">
                         
-                        <label for="author">Номер счета:</label> <input type="number" id="author" name="author" class="required input_field" />
+                        <label for="author">Номер счета:</label> <input type="number" id="author" name="number" class="required input_field" />
                         <div class="cleaner h10"></div>
-                        <label for="adress">Адрес:</label> <input type="text" id="adress" name="adres" class="validate-email required input_field" />
+                        <label for="adress">Адрес:</label> <input type="text" id="adres" name="adres" class="validate-email required input_field" />
                         <div class="cleaner h10"></div>
                         
                         <label for="dost">Дата доставки:</label> <input type="date" name="dost" id="dost" class="input_field" />
