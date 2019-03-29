@@ -19,7 +19,8 @@
             });
             </script>
          <h1>Новинки</h1>
-  <?php foreach($product as $key=>$val){?>
+  <?php foreach($product as $key=>$val){
+        ?>
     <div class='gal'>
     <h4 class='name'><a href='index.php?c=produkt&act=produkt&id=<?=$val['id']?>'><?=$val['name']?></a></h4>
     <a href='index.php?c=produkt&act=produkt&id=<?=$val['id']?>'>
@@ -29,5 +30,9 @@
   
     <a href='index.php?c=produkt&act=produkt&id=<?=$val['id']?>' ><input type='button'  class='basket' value="Подробней"></a>
   </div>
-   <? }?>
+   <? 
+        
+    
+   }
+   ?>
   

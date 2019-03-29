@@ -68,11 +68,11 @@ class User extends Connect {
         
 }
 class Basket extends Connect{
-   // public $user_id;
+   
     
     public $id;
     public function __construct () {
-       // $this->id=self::clear($id);
+     
     }
     
     function getRequestsProduct(){
@@ -89,15 +89,40 @@ class Basket extends Connect{
         //}
     return $result;
     }
+    //function getRequestsProductNew(){
+     //   $sql="SELECT * FROM `product` order by `id` desc limit 3";
+     //   $object=self::connecting();
+    //    $result=$object->query($sql)->fetchAll();
+    //return $result;
+    //}
+    
 
-
-  
-    function getRequestsProductFilter($val1,$val2){
-        $sql="SELECT * FROM `product` ORDER BY $val1 DESC limit $val2";
+    function getRequestsProductFilter($val1){
+        if($val1=='number'){
+            $sql="SELECT * FROM `product` where `number`>0 order by $val1 desc";
+        }
+        else if($val1=='id'){
+            $sql="SELECT * FROM `product` order by $val1 desc limit 3";
+        }
+        else if($val1=='xit'){
+            $sql="SELECT `otziv_nout`.`name`,COUNT(`otziv_nout`.`name`) AS `kolvo`, `product`.* FROM `product` left join `otziv_nout` on `product`.`name`=`otziv_nout`.`name` where `product`.count>0 and `product`.number>0 group by `product`.`count` order by `kolvo` ";
+        }
+        else if($val1=='asc'){
+            $sql="SELECT * FROM `product` order by $val1 asc limit 3";
+        }
+        else{
+            $sql="SELECT * FROM `product` order by $val1 desc";
+        }
+            $object=self::connecting();
+        $result=$object->query($sql)->fetchAll();
+    return $result;
+    }
+    
+    function getRequestsOtzivFilter(){
+        $sql="SELECT `otziv_nout`.`id`,COUNT(`otziv_nout`.`name`) as `kolvo`,`otziv_nout`.`Aftor`, `product`.* FROM `otziv_nout` left join `product` on `otziv_nout`.`name`=`product`.`name` GROUP BY `otziv_nout`.`name` order by `kolvo` DESC";
         $object=self::connecting();
         $result=$object->query($sql)->fetchAll();
-     
-    return $result;
+    return $result; 
     }
 
     function insert_basket($user_id,$id_product,$count){

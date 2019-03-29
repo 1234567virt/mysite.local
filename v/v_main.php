@@ -84,13 +84,13 @@ ddsmoothmenu.init({
             	<h3>Сортировка</h3>   
                 <div class="content"> 
                 	<ul class="sidebar_list">
-                    <li class="first"><a href="index.php?c=basket&act=catalog">Популярность</a></li>
-                        <li><a href="index.php?c=basket&act=catalog">Рейтинг</a></li>
-                        <li><a href="index.php?c=basket&act=catalog&val1=price&val2=2">Цена</a></li>
-                        <li><a href="index.php?c=basket&act=catalog">Отзыв</a></li>
-                        <li><a href="index.php?c=basket&act=catalog">Акции</a></li>
-                        <li><a href="index.php?c=basket&act=catalog&val1=count&val2=3">Новинки</a></li>
-                        <li class="last"><a href="index.php?c=basket&act=availability">Наличие</a></li>
+                    <li class="first"><a href="index.php?c=basket&act=sort&val1=xit">Популярность</a></li>
+                        <li><a href="index.php?c=basket&act=sort&val1=count">Рейтинг</a></li>
+                        <li><a href="index.php?c=basket&act=sort&val1=price">Цена</a></li>
+                        <li><a href="index.php?c=basket&act=otziv">Отзыв</a></li>
+                        <li><a href="index.php?c=basket&act=sort&val1=asc">Акции</a></li>
+                        <li><a href="index.php?c=basket&act=sort&val1=id">Новинки</a></li>
+                        <li class="last"><a href="index.php?c=basket&act=sort&val1=number">Наличие</a></li>
                 </ul>
                 </div>
             </div>
