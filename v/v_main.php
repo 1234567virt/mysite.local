@@ -95,7 +95,12 @@ ddsmoothmenu.init({
                 </div>
             </div>
             <div class="sidebar_box"><span class="bottom"></span>
-    
+            <ul class="sidebar_list">
+                   <?php foreach($top as $key=>$val){ ?>
+                        <li><?php echo  $val['name']?></li>
+                      
+                        <?php } ?>
+                </ul>
             </div>
         </div>
         <div id="content" class="float_r">

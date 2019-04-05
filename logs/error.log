@@ -19,3 +19,5 @@
 [Wed Mar 27 00:34:22.455229 2019] [php7:error] [pid 17782] [client 127.0.0.1:32950] script '/opt/lampp/htdocs/mysite.local/show.php' not found or unable to stat, referer: http://mysite.local/index.php?c=user&act=cabinet
 [Wed Mar 27 00:48:26.833046 2019] [php7:error] [pid 15420] [client 127.0.0.1:33894] script '/opt/lampp/htdocs/mysite.local/show.php' not found or unable to stat, referer: http://mysite.local/index.php?c=user&act=cabinet
 [Wed Mar 27 00:48:27.436398 2019] [php7:error] [pid 15420] [client 127.0.0.1:33894] script '/opt/lampp/htdocs/mysite.local/show.php' not found or unable to stat, referer: http://mysite.local/index.php?c=user&act=cabinet
+[Wed Apr 03 21:59:40.461740 2019] [php7:error] [pid 17475] [client 127.0.0.1:35916] script '/opt/lampp/htdocs/mysite.local/1.php' not found or unable to stat
+[Fri Apr 05 00:12:32.721838 2019] [php7:error] [pid 20037] [client 127.0.0.1:45320] script '/opt/lampp/htdocs/mysite.local/ex2.php' not found or unable to stat

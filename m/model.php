@@ -108,7 +108,7 @@ class Basket extends Connect{
             $sql="SELECT `otziv_nout`.`name`,COUNT(`otziv_nout`.`name`) AS `kolvo`, `product`.* FROM `product` left join `otziv_nout` on `product`.`name`=`otziv_nout`.`name` where `product`.count>0 and `product`.number>0 group by `product`.`count` order by `kolvo` ";
         }
         else if($val1=='asc'){
-            $sql="SELECT * FROM `product` order by $val1 asc limit 3";
+            $sql="SELECT * FROM `product` order by `id` asc limit 3";
         }
         else{
             $sql="SELECT * FROM `product` order by $val1 desc";
