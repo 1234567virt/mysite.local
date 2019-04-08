@@ -90,7 +90,7 @@ placeholder='0' id='select'  /> </td>
 <div id='adress'>
 <center><i>Заполните данные для оформления заказа.</i></center>
                 <div id="contact_form">
-                   <form method="post" style="margin-top:5%;margin-left:40%" name="contact" action="index.php?c=basket&act=check">
+                   <form method="get" style="margin-top:5%;margin-left:40%" name="contact" action="./m/ex2.php">
                         
                         <label for="author">Номер счета:</label> <input type="number" id="author" name="number" class="required input_field" />
                         <div class="cleaner h10"></div>
