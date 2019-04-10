@@ -75,6 +75,7 @@ class Basket extends Connect{
      
     }
     
+
     function getRequestsProduct(){
         $sql="SELECT * FROM `product` ";
         $object=self::connecting();
@@ -187,8 +188,27 @@ class Basket extends Connect{
             }
     return $result;       
     }
-    function check_form(){
+    function check_sum($id_user){
+    $sql="SELECT sum(basket.count) as 'sums', sum(product.price * basket.count) as 'prices' FROM `basket` left JOIN `product` on `product`.id=`basket`.id_product WHERE `basket`.id_user=$id_user";
+    $object=self::connecting();
+    
+    $result=$object->query($sql)->fetchAll(); 
 
+    if($object->query('select count(*) from `basket`')->fetchColumn()===0){
+         return 'error';
+    }
+    
+    return $result;  
+}
+   function check_del($id_user){
+       $sql="delete from `basket` where `id_user`=$id_user";
+        $obj=self::connecting();
+        $obj->query($sql);
+     }
+    function check_update($count,$id){
+        $res_sql="UPDATE `product`  SET `number`=number-$count WHERE `id`=$id";
+        $obj=self::connecting();
+        $obj->query($res_sql);
     }
 }
     ?>

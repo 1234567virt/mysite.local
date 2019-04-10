@@ -32,8 +32,10 @@ class C_User  extends C_Base
 		}
 		else if(isset($_SESSION['user_id'])){
 			$logout= new Basket();
-                                    $text= $logout->basket($_SESSION['user_id']);
-			$this->content = $this->Template('v/v_cabinet.php', array('text' => $text));	
+			$itog=$logout->check_sum($_SESSION['user_id']);
+			 $text= $logout->basket($_SESSION['user_id']);
+			$this->content = $this->Template('v/v_cabinet.php', array('text' => $text,'sum'=>$itog[0]['sums'],'prices'=>$itog[0]['prices']));	
+			
 			}
 		else{
 			$this->content = $this->Template('v/v_author.php', array());

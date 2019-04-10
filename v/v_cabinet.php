@@ -14,7 +14,7 @@ $('#res').change(function(){
 $.ajax({
 type: "GET",
 url: "show.php",
-data: "count="+$("#res").val(),
+data: "sums="+$("#res").val(),
 success: function(html){
 $("#count").html(html);
 }
@@ -81,9 +81,9 @@ placeholder='0' id='select'  /> </td>
   } 
 ?>
 <tr>
-        <td>Итого</td>
-        <td id='count'></td>
-        <td colspan="4"></td>
+        <td><b>Итого</b></td>
+        <td id='sums'colspan='2' style='padding-left:199px;font-weight:700'><?=$sum?></td>
+        <td colspan="3" id='prices' style='padding-left:90px;color:red;font-weight:700'><?=$prices?>$</td>
 </tr>
 </table>	
 <a href="#" id='oformit' onclick="showFun('adress')" style="margin-bottom:10px; margin-top:15px; display:inline-block; margin-left:125px;width:250px;height:30px;font-weight:bold;color:white;background:red;border-radius:7px;border:0px solid transparent;padding-top:10px; text-align:center">Оформить</a>

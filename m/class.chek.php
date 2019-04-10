@@ -3,6 +3,8 @@ require('tfpdf.php');
 
 class PDF extends tFPDF
 {
+     public $itog;
+
         function Header(){
         $this->SetFont('DejaVu','',15);
         $this->SetFontSize(25);
@@ -13,19 +15,21 @@ class PDF extends tFPDF
           $this->SetY(-15);
           $this->SetFont('DejaVu','',8);
           $this->Cell(0,10,'Страница '.$this->PageNo(),0,0,'C');
+          $this->SetFontSize(12);
+          $this->Cell(0,10,'Подпись _______________',0,0,'R');
         }
         function fio($fio,$number,$adress,$date){
             $this->SetY(30);
             $this->SetFont('DejaVu','',8);
             $this->SetFontSize(10);
-            $this->Cell(30);
-            $this->Cell(20,7,'Номер счета: '.$number,0,1,'C');
-            $this->Cell(30);
-            $this->Cell(20,7,'Ф.И.О: '.$fio,0,1,'C');
-            $this->Cell(30);
-            $this->Cell(20,7,'Адрес: '.$adress,0,1,'C');
-            $this->Cell(30);
-            $this->Cell(20,7,'Дата доставки: '.$date,0,1,'C');
+            $this->Cell(3);
+            $this->Cell(20,7,'Номер счета: '.$number,0,1,'L');
+            $this->Cell(3);
+            $this->Cell(20,7,'Ф.И.О: '.$fio,0,1,'L');
+            $this->Cell(3);
+            $this->Cell(20,7,'Адрес: '.$adress,0,1,'L');
+            $this->Cell(3);
+            $this->Cell(20,7,'Дата доставки: '.$date,0,1,'L');
         }
 
         
@@ -61,6 +65,11 @@ class PDF extends tFPDF
                 $this->Ln();
                 $fill = !$fill;
             }
+            $this->SetX(39);
+            $this->Cell($w[0],10,'Итого','LRT',0,'L');
+            $this->Cell($w[1],10,$this->itog[0]['sums'],'T',0,'C');
+            $this->Cell(95,10,$this->itog[0]['prices'].'$','RT',0,'R');
+            $this->Ln();
             // Closing line
             $this->SetX(39);
             $this->Cell(array_sum($w),0,'','T');
